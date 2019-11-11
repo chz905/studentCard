@@ -4,7 +4,7 @@ const PUT = 'PUT';
 const FORM = 'FORM';
 const DELETE = 'DELETE';
 
-const baseURL = 'https://backend.gps.zydrfid.com';
+const baseURL = '';
 
 export const request = (method, url, data) => {
   return new Promise(function (resolve, reject) {
