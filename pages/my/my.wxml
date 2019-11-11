@@ -1,0 +1,78 @@
+<!--pages/my/my.wxml-->
+<view class="my_head">
+  <view class="my_img_left">
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <view class="my_head_right">
+    <view class="my_head_phone">
+      <text>{{ phone }}</text>
+      <view bindtap='go_Location' data-url='../index/index'>
+        <text>个人信息</text>
+        <i></i>
+      </view>
+    </view>
+    <view class="my_head_img">
+      <image src="../../images/qiandao.png" mode="widthFix"></image>
+    </view>
+  </view>
+</view>
+<view class="my_child">
+  <view class="my_child_left">
+    <i class="iconfont iconchezhu"></i>我的孩子
+  </view>
+  <view>{{ childList.length }}/3</view>
+</view>
+<!-- 添加孩子 -->
+<view class="add_child">
+  <view wx:if="{{ childList.length !== 0 }}">
+    <view class="add_child_img">
+      <image src="../../images/addbabyy.png" mode="widthFix"></image>
+    </view>
+    <view>
+      {{ childList.name }}
+    </view>
+  </view>
+  <view wx:else bindtap="chooseImage">
+    <view class="add_child_img">
+      <image src="../../images/addbabyy.png" mode="widthFix"></image>
+    </view>
+    <view>
+      添加孩子
+    </view>
+  </view>
+</view>
+<view class="line"></view>
+<navigator class="navigator" url='../index/index'>
+  <view>
+    <i class="iconfont iconiconcopy"></i>我的积分
+  </view>
+  <i class="iconfont iconfangxiangjiantou1"></i>
+</navigator>
+
+<navigator class="navigator" url='../index/index'>
+  <view>
+    <i class="iconfont iconxingming"></i>帮助说明
+  </view>
+  <i class="iconfont iconfangxiangjiantou1"></i>
+</navigator>
+
+<navigator class="navigator" url='../index/index'>
+  <view>
+    <i class="iconfont iconjiantou"></i>关于我们
+  </view>
+  <i class="iconfont iconfangxiangjiantou1"></i>
+</navigator>
+
+<navigator class="navigator" bindtap="open">
+  <view>
+    <i class="iconfont iconchezhu"></i>客服服务
+  </view>
+  <span style="color:#1ba2ff;font-weight: bold">135-3421-8578</span>
+</navigator>
+
+<navigator class="navigator" bindtap="log_out">
+  <view>
+    <i class="iconfont icondizhi"></i>退出登录
+  </view>
+  <i class="iconfont iconfangxiangjiantou1"></i>
+</navigator>

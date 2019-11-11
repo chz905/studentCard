@@ -1,0 +1,109 @@
+/* pages/my/my.wxss */
+
+.my_head {
+  height: 160rpx;
+  background: url('http://new.newzer.top/images/index/myindex-top-bg.png') no-repeat center;
+  background-size: 100% 100%;
+  padding: 40rpx;
+  box-sizing: border-box;
+  display: flex;
+  font-size: 26rpx;
+  color: #fff;
+}
+
+.my_img_left {
+  width: 84rpx;
+  height: 84rpx;
+  border: 2px solid #fff;
+  box-shadow: 5rpx 5rpx 5rpx rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.my_head_right {
+  display: flex;
+  flex-grow: 1;
+}
+
+.my_head_phone {
+  flex-grow: 1;
+  margin-left: 20rpx;
+}
+
+.my_head_phone > view {
+  line-height: 40rpx;
+}
+
+.my_head_phone > view i {
+  content: '';
+  transform: rotate(-45deg);
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-top: -6px;
+  border: 1px solid transparent;
+  border-right-color: #fff;
+  border-bottom-color: #fff;
+}
+
+.my_head_phone > text {
+  font-size: 34rpx;
+}
+
+.my_head_img {
+  height: 136rpx;
+  width: 120rpx;
+}
+
+.my_head_img image {
+  width: 100%;
+}
+.my_child{
+  display: flex;
+  padding: 28rpx 30rpx;
+  box-sizing: border-box;
+}
+.my_child_left{
+  flex-grow: 1
+}
+.iconchezhu{
+  margin-right: 10rpx
+}
+.add_child{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 17rpx 20rpx;
+}
+.add_child>view{
+  width: 32%;
+  border-radius: 8rpx;
+  border: 2px solid #e4e4e4;
+  padding: 12rpx 0px 6rpx;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 28rpx;
+  color: #666;
+  line-height: 50rpx;
+}
+.add_child_img{
+  width: 100rpx;
+  height: 100rpx;
+  margin: 0 auto
+}
+.add_child_img image{
+  width: 100%
+}
+.navigator{
+  padding: 28rpx 30rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  color: #666;
+}
+.navigator > view{
+  flex-grow: 1
+}
+.navigator > view i{
+  margin-right: 20rpx;
+}

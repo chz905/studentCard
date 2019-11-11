@@ -1,0 +1,89 @@
+<!--pages/home/home.wxml-->
+
+<view class="head_bg">
+  <view class="head_portrait">
+    <view>
+      <view class="img">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <view class="head_name" bindtap="go_Location" data-url='../index/index'>
+        <open-data type="userNickName"></open-data>
+        <i></i>
+      </view>
+    </view>
+  </view>
+  <view class="addchild" bindtap="go_Location" data-url='../index/index'>
+    <view>
+      <view class="img">
+        <image src="../../images/addbaby.png" mode="widthFix"></image>
+      </view>
+      <span>添加孩子</span>
+    </view>
+  </view>
+  <view class="water">
+    <view class="water-c">
+      <view class="water-1"> </view>
+      <view class="water-2"> </view>
+    </view>
+  </view>
+</view>
+<view class="line"></view>
+<view>
+  <view class="text">家长互动</view>
+  <ul class="interactive">
+    <li bindtap="go_Location" data-url='../index/index'>
+      <image src="../../images/kaoqin.png" mode="widthFix"></image>
+      <span>考勤记录</span>
+    </li>
+    <li bindtap="go_Location" data-url='../index/index'>
+      <image src="../../images/kaoqin.png" mode="widthFix"></image>
+      <span>考勤记录</span>
+    </li>
+    <li bindtap="go_Location" data-url='../index/index'>
+      <image src="../../images/kaoqin.png" mode="widthFix"></image>
+      <span>考勤记录</span>
+    </li>
+    <li bindtap="go_Location" data-url='../index/index'>
+      <image src="../../images/kaoqin.png" mode="widthFix"></image>
+      <span>考勤记录</span>
+    </li>
+    <li bindtap="go_Location" data-url='../index/index'>
+      <image src="../../images/kaoqin.png" mode="widthFix"></image>
+      <span>考勤记录</span>
+    </li>
+    <li bindtap="go_Location" data-url='../index/index'>
+      <image src="../../images/kaoqin.png" mode="widthFix"></image>
+      <span>考勤记录</span>
+    </li>
+  </ul>
+</view>
+<view class="line"></view>
+<view>
+  <view class="text">学生安全</view>
+  <ul class="interactive">
+    <li bindtap="go_Location" data-url='../index/index'>
+      <image src="../../images/kaoqin.png" mode="widthFix"></image>
+      <span>考勤记录</span>
+    </li>
+    <li bindtap="go_Location" data-url='../index/index'>
+      <image src="../../images/kaoqin.png" mode="widthFix"></image>
+      <span>考勤记录</span>
+    </li>
+    <li bindtap="go_Location" data-url='../index/index'>
+      <image src="../../images/kaoqin.png" mode="widthFix"></image>
+      <span>考勤记录</span>
+    </li>
+    <li bindtap="go_Location" data-url='../index/index'>
+      <image src="../../images/kaoqin.png" mode="widthFix"></image>
+      <span>考勤记录</span>
+    </li>
+    <li bindtap="go_Location" data-url='../index/index'>
+      <image src="../../images/kaoqin.png" mode="widthFix"></image>
+      <span>考勤记录</span>
+    </li>
+    <li bindtap="go_Location" data-url='../index/index'>
+      <image src="../../images/kaoqin.png" mode="widthFix"></image>
+      <span>考勤记录</span>
+    </li>
+  </ul>
+</view>
